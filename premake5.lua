@@ -1,0 +1,6 @@
+project("PCRE")
+	kind("StaticLib")
+	targetdir("lib/%{cfg.buildcfg}/%{cfg.platform}")
+	targetname("pcre")
+	files("src/*.c")
+	includedirs("include")
