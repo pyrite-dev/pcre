@@ -4,4 +4,7 @@ project("PCRE")
 	targetname("pcre")
 	files("src/*.c")
 	includedirs("include")
-	defines("HAVE_CONFIG_H")
+	defines({
+		"HAVE_CONFIG_H",
+		"PCRE_STATIC"
+	})
